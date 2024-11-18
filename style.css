@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Satisfy&display=swap');
+
+:root {
+    --bg-color: #20242D;
+    --primary-text-color: #F0F4F8;
+    --accent-color: #4CAF50;
+    --secondary-accent-color: #FFB86C;
+    --link-color: #A8D5BA;
+    --neutral-color: #3A3F4B;
+    --brand-color: #FFB86C;
+
+    --regular-font-size: 1.7rem;
+    --medium-font-size: 2rem; 
+    --large-font-size: 3rem;
+    --larger-font-size: 6rem;
+    --largest-font-size: 10rem;
+
+    --heading-font-weight: 600;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: var(--primary-text-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: var(--regular-font-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+.brand {
+    font-size: var(--large-font-size);
+    font-family: Satisfy, cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--brand-color); 
+}
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    padding: 0 50px;
+    background-color: var(--neutral-color);
+    color: var(--heading-color);
+    font-size: var(--medium-font-size);
+    font-weight: var(--heading-font-weight);
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 75px;
+}
+
+
+.navlink {
+    color: var(--link-color);
+    transition: all 0.19s ease-in-out;
+}
+
+.navlink:hover {
+    color: var(--accent-color);
+}
+
+section {
+    padding: 0 50px;
+}
+
+#welcome-section {
+    min-height: 100vh;
+    padding-top: 150px;
+}
+
+#welcome-section .greeting {
+    font-size: var(--large-font-size);
+}
+
+#welcome-section .name {
+    font-size: var(--larger-font-size);
+    font-weight: var(--heading-font-weight);
+    color: var(--secondary-accent-color);
+}
+
+#welcome-section .job {
+    font-size: var(--large-font-size);
+    font-weight: var(--heading-font-weight);
+}
+
+#welcome-section .intro {
+    margin-top: 10px;
+}
+
+#welcome-section a {
+    color: var(--link-color);
+    transition: all 0.19s ease-in-out;
+}
+
+#welcome-section a:hover {
+    color: var(--accent-color);
+}
+
+#projects {
+    padding-top: 80px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: var(--large-font-size);
+    margin-bottom: 30px;
+}
+
+.projects-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-title {
+    font-size: var(--medium-font-size);
+    text-transform: uppercase;
+    font-weight: var(--heading-font-weight);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project img {
+    width: 400px;
+    height: 400px;
+    margin: 18px 0;
+    object-fit: contain;
+}
+
+.project .button {
+    max-width: 200px;
+    background-color: var(--link-color);
+    color: #20242D;
+    padding: 15px;
+    margin: auto;
+    font-size: var(--medium-font-size); 
+    text-transform: uppercase;
+    transition: all 0.19s ease-in-out;
+}
+
+.project .button:hover {
+    background-color: var(--accent-color);
+}
+
+#contact {
+    margin: 8%;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-link i {
+    color: var(--link-color);
+    font-size: var(--largest-font-size);
+    transition: all 0.1s ease-in-out;
+}
+
+.profile-link i:hover {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 900px) {
+    :root {
+        --medium-font-size: 1.5rem; 
+        --largest-font-size: 4rem;
+    }
+    
+    #navbar {
+        padding: 0 25px;
+    }
+
+    section {
+        padding: 0 25px;
+    }
+
+    .brand {
+        font-size: var(--medium-font-size);
+    }
+
+    #navbar ul {
+        gap: 25px;
+    }
+
+    #welcome-section .name {
+        font-size: var(--largest-font-size);
+    }
+
+    .projects-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .project img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .contacts {
+        justify-content: space-between;
+    }
+}
