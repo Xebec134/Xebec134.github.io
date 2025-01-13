@@ -93,12 +93,14 @@ section {
 
 #welcome-section .greeting {
     font-size: var(--large-font-size);
+    margin-bottom: 10px;
 }
 
 #welcome-section .name {
     font-size: var(--larger-font-size);
     font-weight: var(--heading-font-weight);
     color: var(--secondary-accent-color);
+    margin-bottom: 5px;
 }
 
 #welcome-section .job {
@@ -107,7 +109,7 @@ section {
 }
 
 #welcome-section .intro {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #welcome-section a {
@@ -194,7 +196,8 @@ h2 {
 
 @media screen and (max-width: 900px) {
     :root {
-        --medium-font-size: 1.5rem; 
+        --medium-font-size: 1.45rem; 
+        --large-font-size: 2.6rem;
         --largest-font-size: 4rem;
     }
     
@@ -208,14 +211,19 @@ h2 {
 
     .brand {
         font-size: var(--medium-font-size);
+        margin-right: 13px;
     }
 
     #navbar ul {
-        gap: 25px;
+        gap: 20px;
     }
 
     #welcome-section .name {
         font-size: var(--largest-font-size);
+    }
+
+    #welcome-section .job {
+        font-size: var(--large-font-size);
     }
 
     .projects-div {
